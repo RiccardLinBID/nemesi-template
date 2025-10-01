@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "type": "node-terminal",
+    //   "request": "launch",
+    //   "name": "Start Frontend",
+    //   "command": "npm run dev",
+    //   "cwd": "${workspaceFolder}/frontend"
+    // },
+    // {
+    //   "type": "chrome",
+    //   "request": "launch",
+    //   "name": "Debug Frontend (Chrome)",
+    //   "url": "http://localhost:5173",
+    //   "webRoot": "${workspaceFolder}/frontend"
+    // },
+    {
+      "name": "Backend",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+
+     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Frontend",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend/src",
+      "preLaunchTask": "npm: dev",
+      "postDebugTask": "terminate: dev",
+      "serverReadyAction": {
+        "pattern": "Local:.*http://localhost:([0-9]+)",
+        "uriFormat": "http://localhost:%s",
+        "action": "openExternally"
+      }
+    }
+
+    
+  ],
+  "compounds": [
+    {
+      "name": "Start Full Stack",
+      "configurations": ["Backend", "Frontend"]
+    }
+  ]
+ 
+}

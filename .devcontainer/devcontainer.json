@@ -1,0 +1,37 @@
+{
+  "name": "Nemesi Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "pkief.material-icon-theme",
+        "dsznajder.es7-react-js-snippets",
+        "ms-vscode-remote.remote-containers",
+        "formulahendry.auto-rename-tag",
+        "alefragnani.bookmarks",
+        "formulahendry.auto-close-tag",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "ms-vscode.vscode-typescript-next",
+        "ritwickdey.LiveServer",
+        "rvest.vs-code-prettier-eslint",
+        "natqe.reload",
+        "burkeholland.simple-react-snippets",
+        "PulkitGangwar.tailwind-snippets",
+        "xabikos.JavaScriptSnippets",
+        "bradlc.vscode-tailwindcss",
+        "zarifprogrammer.tailwind-snippets",
+        "chanzhaoyu.hono-snippets"
+      ]
+    }
+  },
+  "forwardPorts": []
+}
