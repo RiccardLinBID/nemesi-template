@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.0...nemesi-template-v1.1.1) (2025-10-01)
+
+
+### Bug Fixes
+
+* works with conventional types ([a189424](https://github.com/RiccardLinBID/nemesi-template/commit/a189424eb0a53e942ec713e46dc368314e9247d1))
+
 ## [1.1.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.0.0...nemesi-template-v1.1.0) (2025-10-01)
 
 
