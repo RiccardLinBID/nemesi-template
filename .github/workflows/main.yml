@@ -25,7 +25,7 @@ jobs:
 
       - name: Release Generation
         id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           config-file: .github/workflows/release-please-config.json
