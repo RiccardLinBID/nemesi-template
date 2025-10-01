@@ -12,6 +12,7 @@ function App() {
 
     console.log("The answer is:", a + b);
   };
+
   return (
     <>
       <div>
