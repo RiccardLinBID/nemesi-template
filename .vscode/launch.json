@@ -31,7 +31,7 @@
       "request": "launch",
       "name": "Frontend",
       "url": "http://localhost:5173",
-      "webRoot": "${workspaceFolder}/frontend/src",
+      "webRoot": "${workspaceFolder}/frontend",
       "preLaunchTask": "npm: dev",
       "postDebugTask": "terminate: dev",
       "serverReadyAction": {

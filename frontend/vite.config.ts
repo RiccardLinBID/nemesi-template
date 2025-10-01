@@ -10,11 +10,14 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 0,
   },
+  build: {
+    sourcemap: true,
+  },
   plugins: [
     react({
-      babel: {
-        plugins: [["babel-plugin-react-compiler"]],
-      },
+      // babel: {
+      //   plugins: [["babel-plugin-react-compiler"]],
+      // },
     }),
   ],
 });
