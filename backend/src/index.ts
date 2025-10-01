@@ -4,6 +4,10 @@ import { Hono } from "hono";
 const app = new Hono();
 
 app.get("/", (c) => {
+  const p = "dmsad";
+
+  const a = 2;
+  const d = 3 + a;
   return c.text("Hello Hono!");
 });
 
