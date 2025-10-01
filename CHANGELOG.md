@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.0.0...nemesi-template-v1.1.0) (2025-10-01)
+
+
+### Features
+
+* change minors ([d82bc44](https://github.com/RiccardLinBID/nemesi-template/commit/d82bc4436a1645c0ae4dbcbf9e9ae696502d27b1))
+
 ## 1.0.0 (2025-10-01)
 
 
