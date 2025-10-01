@@ -5,12 +5,11 @@ try {
 
   let newMessage = lastCommit;
 
-  newMessage = newMessage.replace(/^\[add\]!?:/i, "feat$&");
-  newMessage = newMessage.replace(/^\[update\]!?:/i, "chore$&");
-  newMessage = newMessage.replace(/^\[change\]!?:/i, "chore$&");
-  newMessage = newMessage.replace(/^\[fix\]!?:/i, "fix$&");
-  newMessage = newMessage.replace(/^\[delete\]!?:/i, "feat!$&");
-
+  newMessage = newMessage.replace(/^\[add\]\s*:?/i, "feat:");
+  newMessage = newMessage.replace(/^\[update\]\s*:?/i, "chore:");
+  newMessage = newMessage.replace(/^\[change\]\s*:?/i, "chore:");
+  newMessage = newMessage.replace(/^\[fix\]\s*:?/i, "fix:");
+  newMessage = newMessage.replace(/^\[delete\]\s*:?/i, "feat!:");
   if (newMessage !== lastCommit) {
     execSync(
       `git commit --amend -m "${newMessage.replace(/"/g, '\\"')}" --no-edit`
