@@ -23,6 +23,21 @@ jobs:
     steps:
       - name: Check Out Repo
         uses: actions/checkout@v4
+    
+      - name: Map custom commit types for release-please
+        run: |
+          git log --pretty=format:"%H %s" origin/main..HEAD | while read hash msg; do
+            new_msg="$msg"
+            case "$msg" in
+              "[add]"*) new_msg="${msg/[add]/feat}" ;;       # feat = minor
+              "[chance]"* | "[update]"*) new_msg="${msg/[chance]/chore}" ;;
+              "[fix]"*) new_msg="${msg/[fix]/fix}" ;;
+              "[delete]"*) new_msg="${msg/[delete]/feat}" ;;  # feat + BREAKING CHANGE poi aggiungi manualmente
+            esac
+            if [ "$new_msg" != "$msg" ]; then
+              git commit --amend -m "$new_msg" --no-edit || true
+            fi
+          done
 
       - name: Release Generation
         id: release
