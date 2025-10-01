@@ -1,1 +1,48 @@
 
+name: cicd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+  
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release_please:
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      version: ${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}
+    steps:
+      - name: Check Out Repo
+        uses: actions/checkout@v2
+
+      - name: Release Generation
+        id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          config-file: .github/workflows/release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: needs.release_please.outputs.release_created == 'true'
+    needs: release_please
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm CLI
+        run: npm install -g pnpm
+        
+      - name: Running pnpm install
+        run: pnpm install --no-frozen-lockfile
+        
+     
