@@ -38,5 +38,17 @@
   ],
   "packages": {
     ".": {}
+  },
+  "extra-commit-mapping": {
+    "\\[add\\]": "feat",
+    "\\[add\\]!": "feat!",
+    "\\[update\\]": "chore",
+    "\\[update\\]!": "chore!",
+    "\\[change\\]": "chore",
+    "\\[change\\]!": "chore!",
+    "\\[fix\\]": "fix",
+    "\\[fix\\]!": "fix!",
+    "\\[delete\\]": "feat!",
+    "\\[delete\\]!": "feat!"
   }
 }
