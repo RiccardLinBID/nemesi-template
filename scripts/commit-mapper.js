@@ -1,22 +1,12 @@
-const { execSync } = require("child_process");
+const fs = require("fs");
 
-try {
-  const lastCommit = execSync("git log -1 --pretty=%B").toString();
+const commitMsgFile = process.argv[2];
+let msg = fs.readFileSync(commitMsgFile, "utf8");
 
-  let newMessage = lastCommit;
+msg = msg.replace(/^\[add\]\s*:?/i, "feat:");
+msg = msg.replace(/^\[update\]\s*:?/i, "chore:");
+msg = msg.replace(/^\[change\]\s*:?/i, "chore:");
+msg = msg.replace(/^\[fix\]\s*:?/i, "fix:");
+msg = msg.replace(/^\[delete\]\s*:?/i, "feat!:");
 
-  newMessage = newMessage.replace(/^\[add\]\s*:?/i, "feat:");
-  newMessage = newMessage.replace(/^\[update\]\s*:?/i, "chore:");
-  newMessage = newMessage.replace(/^\[change\]\s*:?/i, "chore:");
-  newMessage = newMessage.replace(/^\[fix\]\s*:?/i, "fix:");
-  newMessage = newMessage.replace(/^\[delete\]\s*:?/i, "feat!:");
-  if (newMessage !== lastCommit) {
-    execSync(
-      `git commit --amend -m "${newMessage.replace(/"/g, '\\"')}" --no-edit`
-    );
-    console.log("Commit message mapped for release-please ✅");
-  }
-} catch (err) {
-  console.error("Error mapping commit message:", err.message);
-  process.exit(1);
-}
+fs.writeFileSync(commitMsgFile, msg, "utf8");
