@@ -34,21 +34,14 @@
     {
       "type": "docs",
       "section": "Documentation"
-    }
+    },
+    { "type": "[add]", "section": "Features", "bump": "minor" },
+    { "type": "[chance]", "section": "Chores", "bump": "patch" },
+    { "type": "[update]", "section": "Chores", "bump": "patch" },
+    { "type": "[fix]", "section": "Bug Fixes", "bump": "patch" },
+    { "type": "[delete]", "section": "Breaking Changes", "bump": "major" }
   ],
   "packages": {
     ".": {}
-  },
-  "extra-commit-mapping": {
-    "\\[add\\]": "feat",
-    "\\[add\\]!": "feat!",
-    "\\[update\\]": "chore",
-    "\\[update\\]!": "chore!",
-    "\\[change\\]": "chore",
-    "\\[change\\]!": "chore!",
-    "\\[fix\\]": "fix",
-    "\\[fix\\]!": "fix!",
-    "\\[delete\\]": "feat!",
-    "\\[delete\\]!": "feat!"
   }
 }
