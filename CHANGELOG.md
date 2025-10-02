@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.3](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.2...nemesi-template-v1.1.3) (2025-10-02)
+
+
+### Chores
+
+* add readme badge ([46ac68a](https://github.com/RiccardLinBID/nemesi-template/commit/46ac68aed17eb95e5db0144bb2dde09885b50c83))
+* renaming readme file ([4df3cc1](https://github.com/RiccardLinBID/nemesi-template/commit/4df3cc1c780bc0a9880e44957cb72f9ac213c320))
+
+
+### Documentation
+
+* readme ([83cffd2](https://github.com/RiccardLinBID/nemesi-template/commit/83cffd2648d3566f1ad1ea76ecdf00ee641aacc5))
+* remove image tag ([7286ba8](https://github.com/RiccardLinBID/nemesi-template/commit/7286ba8a3b2945759fc408fa13096348d49fc271))
+* replace with image tag ([984a77c](https://github.com/RiccardLinBID/nemesi-template/commit/984a77c221d422d8e43d38716cac96518e8a0d5a))
+* update badge ([2b70826](https://github.com/RiccardLinBID/nemesi-template/commit/2b708263f78b9c97d89af4973000369eb53b4970))
+* update readme ([d6fcb94](https://github.com/RiccardLinBID/nemesi-template/commit/d6fcb94a7e173347f84e9b88a2787aeaafee68b7))
+* Update README ([aa91ab4](https://github.com/RiccardLinBID/nemesi-template/commit/aa91ab45cfb81f863798af744f03290b8b09ef97))
+
 ## [1.1.2](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.1...nemesi-template-v1.1.2) (2025-10-01)
 
 
