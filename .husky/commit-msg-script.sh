@@ -11,3 +11,5 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
     *)       sed -i 's/^add:/feat:/g' "$COMMIT_MSG_FILE" ;;     # Linux & Windows (Git Bash)
   esac
 fi
+
+
