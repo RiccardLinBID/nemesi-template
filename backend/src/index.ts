@@ -8,6 +8,8 @@ app.get("/", (c) => {
 
   const a = 2;
   const d = 3 + a;
+  const e = d + 3;
+
   return c.text("Hello Hono!");
 });
 
