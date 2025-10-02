@@ -1,24 +1,4 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-MSG_FILE=$1
-MSG=$(cat "$MSG_FILE")
-
-case "$MSG" in
-  \[add\]*)
-    echo "$MSG" | sed "s/^\[add\] */feat: /" > "$MSG_FILE"
-    ;;
-  \[fix\]*)
-    echo "$MSG" | sed "s/^\[fix\] */fix: /" > "$MSG_FILE"
-    ;;
-  \[chance\]*)
-    echo "$MSG" | sed "s/^\[chance\] */chore: /" > "$MSG_FILE"
-    ;;
-  \[update\]*)
-    echo "$MSG" | sed "s/^\[update\] */chore: /" > "$MSG_FILE"
-    ;;
-  \[delete\]*)
-    NEW_MSG=$(echo "$MSG" | sed "s/^\[delete\] */feat!: /")
-    echo -e "${NEW_MSG}\n\nBREAKING CHANGE: removed functionality" > "$MSG_FILE"
-    ;;
-esac
+sh "$(dirname "$0")/commit-msg-script.sh" "$1"
