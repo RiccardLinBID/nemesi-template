@@ -7,3 +7,12 @@
 
 Benvenuto nel progetto **Nemesi 3D**!  
 Questo progetto è un template per soluzioni visualizzazione modelli 3D 
+
+---
+
+## 🚀 Come iniziare
+
+1. Prima di tutto, installa le dipendenze del progetto:
+
+```bash
+npm install
