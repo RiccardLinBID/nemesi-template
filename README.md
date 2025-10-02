@@ -2,7 +2,7 @@
 
 [![cicd](https://github.com/RiccardLinBID/nemesi-template/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/RiccardLinBID/nemesi-template/actions/workflows/main.yml)
 
-![version](https://img.shields.io/github/package-json/v/RiccardLinBID/nemesi-template?filename=package.json&label=version)
+![Version](https://img.shields.io/github/v/release/RiccardLinBID/nemesi-template?sort=semver&label=release)
 
 
 Benvenuto nel progetto **Nemesi 3D**!  
