@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.1...nemesi-template-v1.2.2) (2025-10-02)
+
+
+### Bug Fixes
+
+* **script:** remove commit-mapper ([a4b32f0](https://github.com/RiccardLinBID/nemesi-template/commit/a4b32f054a74a640960aedb626eaca44e0a93b60))
+
 ## [1.2.1](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.0...nemesi-template-v1.2.1) (2025-10-02)
 
 
