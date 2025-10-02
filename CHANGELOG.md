@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.2.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.3...nemesi-template-v1.2.0) (2025-10-02)
+
+
+### Features
+
+* install root ([c448940](https://github.com/RiccardLinBID/nemesi-template/commit/c4489408e9078e95e35dde227a1169efe88acaef))
+* nuova funzionalità ([f44ae2b](https://github.com/RiccardLinBID/nemesi-template/commit/f44ae2b2b33edc834be91f9ddd3744593759f1ca))
+* nuova funzionalità ([c8b67f8](https://github.com/RiccardLinBID/nemesi-template/commit/c8b67f856e6706a149911c49d2ca22d31c9f198f))
+* nuova funzionalità ([d372823](https://github.com/RiccardLinBID/nemesi-template/commit/d3728231d627af8a2362ad0167da1185b3a1e26f))
+* Something ([21d588e](https://github.com/RiccardLinBID/nemesi-template/commit/21d588e501411be2b72b024b6e48669fb5f969c2))
+* spacing ([67a995b](https://github.com/RiccardLinBID/nemesi-template/commit/67a995b25b4ad59f6e41a20af4a6b3bd96ff7518))
+* test ([fff87d1](https://github.com/RiccardLinBID/nemesi-template/commit/fff87d19f0a70bfa562bbc65fe71f820e5249bfb))
+
+
+### Bug Fixes
+
+* error on cicd ([de7ac54](https://github.com/RiccardLinBID/nemesi-template/commit/de7ac5495a09b729096d7fb40b9ef930661fe69a))
+* force failed ([db86dff](https://github.com/RiccardLinBID/nemesi-template/commit/db86dffad9bc034c95e9c84e386a2c3a9b92a02b))
+* message on msg script commit type ([a2d9cab](https://github.com/RiccardLinBID/nemesi-template/commit/a2d9cab420930226233cf238cc1cd9a67fe1567d))
+* minors ([0b28c1c](https://github.com/RiccardLinBID/nemesi-template/commit/0b28c1c79505e6c6e50cf36764d16316a3b40efd))
+* test ([0936c90](https://github.com/RiccardLinBID/nemesi-template/commit/0936c90364c5b98bbf671f8d87ad2ed63f37d90f))
+* test ([32ec5d2](https://github.com/RiccardLinBID/nemesi-template/commit/32ec5d2ea4a5d71ae53cdded6e935ffb640126c7))
+* test commit ([4a46c55](https://github.com/RiccardLinBID/nemesi-template/commit/4a46c552793f0a9b3d9f29b31568180302a2c221))
+
+
+### Chores
+
+* commit-msg script ([0ad6b03](https://github.com/RiccardLinBID/nemesi-template/commit/0ad6b036e37c901d66a189ea87214bf47627ee93))
+
 ## [1.1.3](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.2...nemesi-template-v1.1.3) (2025-10-02)
 
 
