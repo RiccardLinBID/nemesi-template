@@ -17,6 +17,7 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
         "$COMMIT_MSG_FILE"
       ;;
     *)
+    
       # Linux & Windows (Git Bash)
       sed -i \
         -e 's/^\[add\]:/feat:/g' \
