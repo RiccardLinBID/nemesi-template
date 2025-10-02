@@ -20,7 +20,7 @@ fi
 
 # ---- Controllo commit convention prima di modificare ----
 MSG=$(cat "$COMMIT_MSG_FILE")
-ALLOWED_TYPES="(\[add\]|\[chance\]|\[update\]|\[fix\]|\[delete\]|\[refactor\]|\[perf\]|feat|fix|chore|refactor|perf|docs|test|style|ci|build|revert|hotfix)(\([^)]+\))?(!)?:?"
+ALLOWED_TYPES="^((Merge\ branch)|(\[add\]|\[chance\]|\[update\]|\[fix\]|\[delete\]|\[refactor\]|\[perf\]|feat|fix|chore|refactor|perf|docs|test|style|ci|build|revert|hotfix)(\([^)]+\))?(!)?:?)"
 
 if ! echo "$MSG" | grep -qE "^$ALLOWED_TYPES"; then
   echo "Errore: commit non conforme. Usa uno dei tipi consentiti"
@@ -36,6 +36,7 @@ case "${unameOut}" in
     sed -i '' \
       -e 's/^\[add\]/feat:/g' \
       -e 's/^\[fix\]/fix:/g' \
+      -e 's/^\[change\]/fix:/g' \
       -e 's/^\[update\]/fix:/g' \
       -e 's/^\[delete\]/chore:/g' \
       -e 's/^\[refactor\]/refactor:/g' \
@@ -46,6 +47,7 @@ case "${unameOut}" in
     sed -i \
       -e 's/^\[add\]/feat:/g' \
       -e 's/^\[fix\]/fix:/g' \
+      -e 's/^\[change\]/fix:/g' \
       -e 's/^\[update\]/fix:/g' \
       -e 's/^\[delete\]/chore:/g' \
       -e 's/^\[refactor\]/refactor:/g' \
