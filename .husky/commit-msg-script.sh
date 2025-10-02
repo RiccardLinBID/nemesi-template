@@ -12,6 +12,7 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
         -e 's/^\[add\]/feat:/g' \
         -e 's/^\[fix\]/fix:/g' \
         -e 's/^\[update\]/chore:/g' \
+        -e 's/^\[delete\]/chore:/g' \
         "$COMMIT_MSG_FILE"
       ;;
     *)
@@ -19,6 +20,7 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
         -e 's/^\[add\]/feat:/g' \
         -e 's/^\[fix\]/fix:/g' \
         -e 's/^\[update\]/chore:/g' \
+        -e 's/^\[delete\]/chore:/g' \
         "$COMMIT_MSG_FILE"
       ;;
   esac
