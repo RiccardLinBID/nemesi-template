@@ -29,3 +29,5 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
       ;;
   esac
 fi
+
+
