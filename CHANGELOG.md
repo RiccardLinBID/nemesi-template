@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.0...nemesi-template-v1.2.1) (2025-10-02)
+
+
+### Bug Fixes
+
+* remove comment ([1af4ae8](https://github.com/RiccardLinBID/nemesi-template/commit/1af4ae8666f8e4be2268408ca16b2d9c07aae269))
+
 ## [1.2.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.1.3...nemesi-template-v1.2.0) (2025-10-02)
 
 
