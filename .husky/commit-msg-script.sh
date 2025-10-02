@@ -11,16 +11,20 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
       sed -i '' \
         -e 's/^\[add\]/feat:/g' \
         -e 's/^\[fix\]/fix:/g' \
-        -e 's/^\[update\]/chore:/g' \
+        -e 's/^\[update\]/fix:/g' \
         -e 's/^\[delete\]/chore:/g' \
+        -e 's/^\[refactor\]/refactor:/g' \
+        -e 's/^\[perf\]/perf:/g' \
         "$COMMIT_MSG_FILE"
       ;;
     *)
       sed -i \
         -e 's/^\[add\]/feat:/g' \
         -e 's/^\[fix\]/fix:/g' \
-        -e 's/^\[update\]/chore:/g' \
+        -e 's/^\[update\]/fix:/g' \
         -e 's/^\[delete\]/chore:/g' \
+        -e 's/^\[refactor\]/refactor:/g' \
+        -e 's/^\[perf\]/perf:/g' \
         "$COMMIT_MSG_FILE"
       ;;
   esac
