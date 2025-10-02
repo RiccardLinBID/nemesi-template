@@ -3,6 +3,7 @@
   "version": "1.1.3",
   "private": true,
   "scripts": {
+    "install:root": "npm install",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
     "install:frontend": "cd frontend && npm install",
     "install:backend": "cd backend && npm install",
