@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.3](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.2...nemesi-template-v1.2.3) (2025-10-03)
+
+
+### Bug Fixes
+
+* cicd ([987662e](https://github.com/RiccardLinBID/nemesi-template/commit/987662ed9cb7d9e02552996afd2e1486a9cba1e5))
+* dependency ([30f954b](https://github.com/RiccardLinBID/nemesi-template/commit/30f954b2091c5e6dfa1b5c8a31122622c1b9b2e9))
+
+
+### Documentation
+
+* readme update ([fd98659](https://github.com/RiccardLinBID/nemesi-template/commit/fd9865981c63b969c548e2d1155e8e757c80d3ee))
+
 ## [1.2.2](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.1...nemesi-template-v1.2.2) (2025-10-02)
 
 
