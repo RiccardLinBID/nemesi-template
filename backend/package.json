@@ -2,8 +2,9 @@
   "name": "backend",
   "type": "module",
   "scripts": {
+    "lint": "eslint \"src/**/*.ts\"",
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "build": "npm run lint && tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
@@ -12,6 +13,10 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "eslint": "^9.36.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.4",
     "tsx": "^4.7.1",
     "typescript": "^5.8.3"
   }

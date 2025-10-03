@@ -1,48 +1,46 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always", 
-  },
+  // NON eseguire ESLint su save - troppo lento
+  "editor.codeActionsOnSave": {},
+  
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
-    "html"
+    "typescriptreact"
   ],
-  "eslint.debug": false,
-  "eslint.format.enable": true,
+  
   "eslint.enable": true,
-  "vs-code-prettier-eslint.prettierLast": true,
-  "eslint.workingDirectories": [{ "mode": "auto" }],
-  "eslint.options": {
-    "overrideConfigFile": "./eslint.config.mjs"
-  },
+  "eslint.format.enable": false,
+  
+  "eslint.workingDirectories": [
+    { "directory": "./frontend", "changeProcessCWD": true },
+    { "directory": "./backend", "changeProcessCWD": true }
+  ],
 
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
- 
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
- 
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "prettier.endOfLine": "auto",
-  "editor.formatOnSave": true,
-
+  "editor.formatOnSave": true
 }
