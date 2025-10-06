@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { redirect } from "react-router-dom";
 
 const Home = () => {
   const [count, setCount] = useState(0);
-  const a = "n";
 
   redirect("/login");
 
