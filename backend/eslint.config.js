@@ -32,7 +32,7 @@ export default [
       "@typescript-eslint/explicit-function-return-type": "off",
 
       "no-console": "warn",
-      "prettier/prettier": "warn",
+      // "prettier/prettier": "warn",
     },
     settings: {
       "import/resolver": {
