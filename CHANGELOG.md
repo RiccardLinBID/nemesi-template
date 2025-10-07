@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.1](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.3.0...nemesi-template-v1.3.1) (2025-10-07)
+
+
+### Bug Fixes
+
+* **eslint:** prettier endOfLine = auto ([7297b42](https://github.com/RiccardLinBID/nemesi-template/commit/7297b42ad1806bd0c13c1581c47ba3393a9cabbf))
+* **general:** script on root ([fc22703](https://github.com/RiccardLinBID/nemesi-template/commit/fc22703865b45aaf7a1649650a8e7e306e50cb35))
+* settings to includes html on formatting ([3521bd8](https://github.com/RiccardLinBID/nemesi-template/commit/3521bd88ef79648691d77b9d4297f33dc75413ec))
+
+
+### Chores
+
+* add knip ([8af13db](https://github.com/RiccardLinBID/nemesi-template/commit/8af13db407b38d76377b47f723a4d43bc8859620))
+
 ## [1.3.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.3...nemesi-template-v1.3.0) (2025-10-07)
 
 
