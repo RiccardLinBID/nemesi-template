@@ -1,0 +1,15 @@
+{
+  "workspaces": {
+    "frontend": {
+      "entry": ["src/main.tsx", "index.html", "**/*.config.{js,ts,cjs,mjs}"],
+      "project": ["src/**/*.{ts,tsx}"]
+    },
+    "backend": {
+      "entry": ["**/*.config.{js,ts,cjs,mjs}"],
+      "project": ["src/**/*.ts"]
+    }
+  },
+  "entry": ["knip.json"],
+  "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"],
+  "ignoreBinaries": ["docker-compose"]
+}
