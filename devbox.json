@@ -1,0 +1,9 @@
+{
+  "packages": ["nodejs@22", "git", "curl", "vim", "unzip", "pnpm", "bun"],
+  "shell": {
+    "init_hook": ["npm install -g npm@latest eslint prettier"],
+    "scripts": {
+      "start": "bash"
+    }
+  }
+}
