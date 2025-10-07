@@ -26,6 +26,8 @@ export default defineConfig([
       globals: globals.browser,
     },
 
-    rules: {},
+    rules: {
+      "prettier/prettier": ["warn", { endOfLine: "auto" }],
+    },
   },
 ]);

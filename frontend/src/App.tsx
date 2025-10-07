@@ -7,8 +7,6 @@ function App() {
   const [count, setCount] = useState(0);
   const a = "n";
 
-  console.log(count);
-
   return (
     <>
       <div>
