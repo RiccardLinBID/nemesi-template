@@ -1,6 +1,5 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
-
 const app = new Hono();
 
 function test(a: any) {
@@ -10,6 +9,7 @@ function test(a: any) {
 // function prova(a: any) {
 //   console.info(a);
 // }
+
 app.get("/", (c) => {
   const pippo = test(5);
   console.log(pippo);
