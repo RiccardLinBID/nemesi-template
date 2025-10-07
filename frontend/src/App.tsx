@@ -3,7 +3,6 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import "./App.css";
 import Login from "./pages/Login";
-import "./App.css";
 
 export default function App() {
   return (
