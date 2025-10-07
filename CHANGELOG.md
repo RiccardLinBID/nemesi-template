@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.3.0](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.3...nemesi-template-v1.3.0) (2025-10-07)
+
+
+### Features
+
+* **general:** configure with devbox ([6c102f0](https://github.com/RiccardLinBID/nemesi-template/commit/6c102f063a567d792bd30506b736d0da190b74b9))
+
+
+### Chores
+
+* **linting:** set linting ([891be21](https://github.com/RiccardLinBID/nemesi-template/commit/891be218a60cdd4d5fbfdc0a167b6a98d0165639))
+
+
+### CI/CD System
+
+* update ([4266dc5](https://github.com/RiccardLinBID/nemesi-template/commit/4266dc522860ddb408b1f969e733623662c4c9d7))
+
 ## [1.2.3](https://github.com/RiccardLinBID/nemesi-template/compare/nemesi-template-v1.2.2...nemesi-template-v1.2.3) (2025-10-03)
 
 
