@@ -9,6 +9,7 @@
     "install:backend": "cd backend && npm install",
     "lint:frontend": "cd frontend && npm run lint",
     "lint:backend": "cd backend && npm run lint",
+    "knip": "knip",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
@@ -25,6 +26,7 @@
     "build:backend_image": "docker build -t nemesi-backend -f ./backend/Dockerfile ./backend"
   },
   "devDependencies": {
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "knip": "^5.64.2"
   }
 }
