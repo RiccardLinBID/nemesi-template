@@ -9,6 +9,10 @@ await connectDB();
 
 app.use("*", cors());
 
+// function prova(a: any) {
+//   console.info(a);
+// }
+
 app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
