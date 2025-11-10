@@ -1,8 +1,10 @@
 {
   "name": "nemesi-template",
-  "version": "1.3.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
+    "init:frontend": "npm create vite@latest frontend -- --template react",
+    "init:backend": "npm create hono@latest backend",
     "install:root": "npm install",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
     "install:frontend": "cd frontend && npm install",
